@@ -1,0 +1,15 @@
+{
+  "name": "labone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jovian Rios",
+  "license": "ISC",
+  "dependencies": {
+    "beepbeep": "^1.3.0",
+    "chalk": "^4.1.0"
+  },
+  "description": ""
+}
