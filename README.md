@@ -1,2 +1,2 @@
 # DIG4503
-Lab One is located in the Master branch!
+Lab One re-do is located in the "placeholder" branch.
