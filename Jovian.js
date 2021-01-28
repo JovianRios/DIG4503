@@ -1,8 +1,8 @@
 const Person = require("./person.js");
 
 class Jovian extends Person {
-    constructor(name, colors, bgColors) {
-        super(name, colors, bgColors);
+    constructor(name, color) {
+        super(name, color);
     }
 }
 

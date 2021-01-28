@@ -11,5 +11,13 @@
     "beepbeep": "^1.3.0",
     "chalk": "^4.1.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JovianRios/DIG4503.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JovianRios/DIG4503/issues"
+  },
+  "homepage": "https://github.com/JovianRios/DIG4503#readme",
   "description": ""
 }
