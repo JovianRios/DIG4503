@@ -5,5 +5,4 @@ class Jovian extends Person {
         super(name, color);
     }
 }
-
 module.exports = Jovian;
