@@ -1,2 +1,2 @@
 # DIG4503
-Lab One re-do is located in the "placeholder" branch.
+Lab one re-do is located in the "labone" branch.
