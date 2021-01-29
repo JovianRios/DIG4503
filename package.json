@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "name": "labtwo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jovian Rios",
+  "license": "ISC",
+  "description": ""
+}
