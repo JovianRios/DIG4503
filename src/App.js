@@ -1,5 +1,5 @@
 import './App.js';
-import HomePage from './homepage';
+import HomePage from './components/homepage.js';
 
 function App() {
   const fname = 'Jovian'; 
