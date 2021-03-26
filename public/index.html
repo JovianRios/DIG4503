@@ -1,0 +1,84 @@
+<html>
+    <body>
+        <script>
+            function readName(event) {
+                
+                event.preventDefault();
+
+                let element = document.querySelector("#name");
+
+                fetch("/employees/" + element.value)
+                .then((res) => {
+                    return res.json();
+                })
+                .then((processed) => {
+                    let reporting = document.querySelector("#reportingArea");
+
+                    if(processed.error) {
+                        reporting.innerHTML = processed.error;
+                    }
+                    else {
+                        reporting.innerHTML = processed.age;
+                    }
+                });
+            }
+
+            function readNumber(event) {
+                event.preventDefault();
+
+                let emelement = document.querySelector("#number");
+                fetch("/ages/" + number.value)
+                .then((res) => {
+                    return res.json();
+                })
+                .then((processed) => {
+                    let reporting = document.querySelector("#reportingArea");
+                    
+                    if(processed.error) {
+                        reporting.innerHTML = processed.error;
+                    }
+                    else {
+                        reporting.innerHTML = processed.name;
+                    }
+                });
+            }
+
+            function createName(event) {
+                event.preventDefault();
+
+                let name = document.querySelector("#employeeName");
+                let age = document.querySelector("#employeeAge");
+
+                fetch("/employees/" + name.value + "/" + age.value, {
+                    "method": "post"
+                }).then ((res) => {
+                    return res.json();
+                }).then((processed) => {
+                    console.log(processed);
+                });
+            }
+
+        </script>
+        <h2>Name:</h2>
+        <form onsubmit="readName(event)">
+            <input id="name" type="text">
+            <button>Submit</button>
+        </form>
+
+    <h2>Age:</h2>
+        <form onsubmit="readNumber(event)">
+            <input id="number" type="text">
+            <button>Submit</button>
+        </form>
+        <hr>
+    <h2>Enter Name & Age:</h2>
+        <form onsubmit="createName(event)">
+            <input id="employeeName" type="text">
+            <input id="employeeAge" type="text">
+            <button>Submit</button>
+        </form>
+        <hr>
+        <h2>Reporting</h2>
+        <div id="reportingArea"></div>
+    </body>
+</html>
